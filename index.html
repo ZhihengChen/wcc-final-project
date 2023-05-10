@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	.button {
+		color: #dedede;
+		background-color: #44433c;
+		font-size: 14.6px;
+		border: 1px solid #020202;
+		border-radius: 3px;
+		padding: 4px 2.5px;
+		letter-spacing: 0.5px;
+		cursor: pointer;
+    	position: absolute;
+    	display: block;
+    	z-index: 99;
+    	left: 48.15%;
+    	top: 19.54%;
+    }
+
+	.button:hover {
+		color: #dedede;
+		background-color: #2d2925;
+	}
+		*{margin:0;padding:0} 
+		canvas{display: block}
+		#container{width: 100vw;height: 100vh}
+
+    </style>
+</head>
+<body>
+	<div id="container"></div>
+
+	<audio id="myAudio" src="./js/assets/AcousticRock.mp3"
+			autoplay
+			loop
+			onPlay={play}>
+		</audio>
+
+	<button class="button" type="button" data-playing="false" role="switch" aria-checked="false">
+		MUSIC
+	  </button> 
+
+	<script src="js/app.js" type="module"></script>
+
+</body>
+</html>
